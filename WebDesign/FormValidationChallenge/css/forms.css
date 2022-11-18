@@ -1,64 +1,53 @@
-/*select {
-    width: 50%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-  }
-  input[type=button], input[type=submit], input[type=reset] {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  */
 #heading {
     text-decoration: underline;
+    text-align: center;
 }
 
-.txtul{
-    text-decoration: underline;
+body{
+font-family: sans-serif;
+text-decoration: solid;
+font-weight: bold;
 }
-body {
-    background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.myform{
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px solid;
+  padding: 2rem;
+  background-image: linear-gradient(25deg, #b6204c, #b0527d, #9e77b2, #7498ea)
+}
 
-input[type=text],[type=password],[type=email],[type=number],[type="radio"],[type=checkbox] {
-    width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border:2px solid ;
-  }
-  select {
-    width: 50%;
-    padding: 12px;
-    border: 2px solid;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-  }
-  textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid;
-    border-radius: 5px;
-    background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-    resize: none;
-  }
-  input[type=submit]{
-    background-color: #04AA6D;
-    border:2px solid;
-    padding: 12px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+.uni {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+
+select{
+  display: block;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+
+input[type=radio]{
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+
+}
+input[type=checkbox]{
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  
+}
