@@ -6,7 +6,8 @@
   width: 17%;
   height: 300px;
   width: 300px;
-  object-fit: cover;
+  object-fit:cover;
+  object-position:0 1%;
   border-radius: 50%;
   border: 3px solid orange;
 }
