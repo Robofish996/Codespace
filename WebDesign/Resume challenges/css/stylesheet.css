@@ -1,4 +1,4 @@
-picture{
+picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +9,8 @@ picture{
   border-radius: 50%;
   border: 3px solid gold;
 }
-img{
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -20,8 +21,9 @@ img{
   border-radius: 50%;
   background-size: covers;
   background-repeat: no-repeat;
-  
+
 }
+
 /*Customizing footer and header*/
 #header {
   text-align: center;
@@ -107,13 +109,26 @@ footer {
   border: 3px solid grey;
 }
 
-@media only screen and (max-width:600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width:600px) {
+
+  .main {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icons {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+  }
 
 
- .div{
- background-color: #44e192;
-}
-#sidebar{
+#sidebar {
   position: fixed;
   width: 15%;
   height: 250px;
@@ -123,4 +138,38 @@ footer {
   margin-right: 50px;
   margin-left: 0px;
   border: 3px solid grey;
+
 }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width:768px) {
+  .main {
+    font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icons {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+  }
+
+
+#sidebar {
+  position: fixed;
+  width: 15%;
+  height: 250px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 50px;
+  margin-left: 0px;
+  border: 3px solid gold;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
