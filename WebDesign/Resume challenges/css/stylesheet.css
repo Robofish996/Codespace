@@ -1,3 +1,4 @@
+/**/
 picture {
   display: block;
   margin-left: auto;
@@ -10,7 +11,7 @@ picture {
   border: 3px solid gold;
 }
 
-img {
+picture img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -18,158 +19,376 @@ img {
   height: 300px;
   width: 300px;
   object-fit: fill;
-  border-radius: 50%;
+ border-radius: 50%;
   background-size: covers;
   background-repeat: no-repeat;
 
 }
 
-/*Customizing footer and header*/
-#header {
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width:500px) {
+
+  #header {
+    text-align: center;
+    font-size: 110%;
+    padding: 2rem;
+
+  }
+
+  ul.sidemenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .pst {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .icons {
+    display: inline-block;
+    width: 5rem;
+    margin: 0.5rem;
+    height: 5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #contact {
+    text-decoration: underline;
+  }
+
+  .main {
+    width: 100%;
+    overflow: unset;
+  }
+
+  .icons:hover {
+    width: 100px;
+    height: 100px;
+    animation-name: rotateImage;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    5% {
+      transform: rotate(18deg);
+    }
+
+    10% {
+      transform: rotate(36deg);
+    }
+
+    15% {
+      transform: rotate(54deg);
+    }
+
+    20% {
+      transform: rotate(72deg);
+    }
+
+    25% {
+      transform: rotate(90deg);
+    }
+
+    30% {
+      transform: rotate(108deg);
+    }
+
+    40% {
+      transform: rotate(126deg);
+    }
+
+    45% {
+      transform: rotate(144deg);
+    }
+
+    50% {
+      transform: rotate(162deg);
+    }
+
+    55% {
+      transform: rotate(180deg);
+    }
+
+    60% {
+      transform: rotate(198deg);
+    }
+
+    65% {
+      transform: rotate(216deg);
+    }
+
+    70% {
+      transform: rotate(234deg);
+    }
+
+    75% {
+      transform: rotate(252deg);
+    }
+
+    80% {
+      transform: rotate(288deg);
+    }
+
+    85% {
+      transform: rotate(306deg);
+    }
+
+    90% {
+      transform: rotate(324deg);
+    }
+
+    95% {
+      transform: rotate(342deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width:501px) {
+  #header {
+    text-align: center;
+    font-size: 110%;
+    padding: 2rem;
+
+  }
+
+  ul.sidemenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li.plz {
+    float: left;
+  }
+
+li a {
+  display: block;
+  color: white;
   text-align: center;
-  font-size: 110%;
-  padding: 2rem;
-
+  padding: 14px 16px;
+  text-decoration: none;
 }
-
-/*background colors and styling*/
-body {
-  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+li a:hover{
+  background-color:#7b2f91;
 }
-
-aside,
-main {
-  display: inline-block;
-}
-
-/*Customizing side menu*/
-.sidemenu {
-  list-style-type: none;
-  padding: 0%;
-  margin-bottom: 0%;
-}
-
-/*Customizing Links colors*/
-a:visited {
-  color: blue;
-}
-
-/*Heading formating and underlining*/
 .heading {
   text-decoration: underline;
+  text-align: center;
 }
-
-/*Customizing post headings*/
 .pst {
   text-decoration: underline;
   font-weight: bold;
 }
-
-/*Spacing icons*/
 .icons {
+  display: inline-block;
   width: 5rem;
   margin: 0.5rem;
   height: 5rem;
 }
-
-
-.iconAchors {
-  text-decoration: none !important;
-}
-
-/*Underlying footer and aligning text*/
 footer {
   text-align: center;
   padding: 2rem;
 }
-
 #contact {
   text-decoration: underline;
 }
-
 .main {
-  margin-left: 22%;
-  width: 75%;
+  width: 100%;
   overflow: unset;
 }
-
-/*Customizing menu bar and positioning*/
-#sidebar {
-  position: fixed;
-  width: 15%;
-  height: 200px;
-  padding-top: 0px;
-  padding-left: 10px;
-  margin-right: 45px;
-  margin-left: 35px;
-  border: 3px solid grey;
+.icons:hover {
+  width: 100px;
+  height: 100px;
+  animation-name: rotateImage;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: relative;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width:600px) {
-
-  .main {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-left: auto;
-    margin-right: auto;
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .icons {
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
+  5% {
+    transform: rotate(18deg);
   }
 
-
-#sidebar {
-  position: fixed;
-  width: 15%;
-  height: 250px;
-  padding-top: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 50px;
-  margin-left: 0px;
-  border: 3px solid grey;
-
-}
-}
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width:768px) {
-  .main {
-    font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
-    padding-left: 250px;
-    padding-right: 250px;
-    margin-left: auto;
-    margin-right: auto;
+  10% {
+    transform: rotate(36deg);
   }
 
-  .icons {
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
+  15% {
+    transform: rotate(54deg);
   }
 
+  20% {
+    transform: rotate(72deg);
+  }
 
-#sidebar {
-  position: fixed;
-  width: 15%;
-  height: 250px;
-  padding-top: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 50px;
-  margin-left: 0px;
-  border: 3px solid gold;
+  25% {
+    transform: rotate(90deg);
+  }
+
+  30% {
+    transform: rotate(108deg);
+  }
+
+  40% {
+    transform: rotate(126deg);
+  }
+
+  45% {
+    transform: rotate(144deg);
+  }
+
+  50% {
+    transform: rotate(162deg);
+  }
+
+  55% {
+    transform: rotate(180deg);
+  }
+
+  60% {
+    transform: rotate(198deg);
+  }
+
+  65% {
+    transform: rotate(216deg);
+  }
+
+  70% {
+    transform: rotate(234deg);
+  }
+
+  75% {
+    transform: rotate(252deg);
+  }
+
+  80% {
+    transform: rotate(288deg);
+  }
+
+  85% {
+    transform: rotate(306deg);
+  }
+
+  90% {
+    transform: rotate(324deg);
+  }
+
+  95% {
+    transform: rotate(342deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+/*#slider {
+	overflow: hidden;
 }
-/* Medium devices (landscape tablets, 768px and up) */
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}*/
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width:1500px) {
+
+  /*Customizing footer and header*/
+  #header {
+    text-align: center;
+    font-size: 110%;
+    padding: 2rem;
+
+  }
+
+}
