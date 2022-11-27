@@ -1,35 +1,36 @@
 /*adjusting images*/
 picture {
-  display: block;
+ display: block;
   margin-left: auto;
   margin-right: auto;
   width: 17%;
   height: 300px;
   width: 300px;
-  object-fit: cover;
+  /*object-fit: cover;*/
   border-radius: 50%;
   border: 3px solid gold;
 }
 
-picture img {
-  display: block;
+.scaleImg {
   margin-left: auto;
   margin-right: auto;
   width: 17%;
-  height: 300px;
-  width: 300px;
-  object-fit: fill;
+  height: 295px;
+  width: 295px;
+  object-fit: cover;
   border-radius: 50%;
-  background-size: covers;
   background-repeat: no-repeat;
 
 }
 
-
+body {
+  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width:600px) {
+@media only screen and (max-width:764px) {
 
   #header {
     text-align: center;
@@ -39,8 +40,6 @@ picture img {
   }
 
   body {
-    background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -52,6 +51,7 @@ picture img {
     padding: 0;
     width: 100%;
     background-color: #333;
+    
   }
   .active {
     background-color: #04AA6D;
@@ -202,7 +202,7 @@ picture img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:765px) {
   
   #header {
     text-align: center;
@@ -213,8 +213,6 @@ picture img {
 
 
     body {
-      background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 1rem;
       margin-left: auto;
       margin-right: auto;
@@ -389,7 +387,7 @@ picture img {
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1400px) {
 
   #header {
     text-align: center;
@@ -400,8 +398,6 @@ picture img {
 
 
     body {
-      background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 1rem;
       margin-left: auto;
       margin-right: auto;
@@ -488,6 +484,8 @@ picture img {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     position: relative;
+    transition: 0.2s;
+
   }
 
   @keyframes rotateImage {
