@@ -1,6 +1,6 @@
 /*adjusting images*/
 picture {
- display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 17%;
@@ -23,551 +23,71 @@ picture {
 
 }
 
+#header {
+  text-align: center;
+  font-size: 110%;
+}
+footer {
+  text-align: center;
+
+}
+.icons {
+  width: 100px;
+  height: 100px;
+  animation-name: rotateImage;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(18deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-18deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(18deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-18deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(18deg);
+  }
+
+}
 body {
-  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
 }
-
-/* Small devices (portrait tablets and large phones, 764px and up) */
-
-@media only screen and (max-width:764px) {
-
-  #header {
-    text-align: center;
-    font-size: 110%;
-    padding: 2rem;
-
-  }
-
-  body {
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  ul.sidemenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #333;
-    
-  }
-  .active {
-    background-color: #04AA6D;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #7b2f91;
-    color: white;}
-    
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 10px;
-    text-decoration: none;
-  }
-
-
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .heading {
-    text-decoration: underline;
-    text-align: center;
-  }
-
-  .pst {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-  .icons {
-    display: inline-block;
-    width: 5rem;
-    margin: 0.5rem;
-    height: 5rem;
-  }
-
-  footer {
-    text-align: center;
-    padding: 2rem;
-  }
-
-  #contact {
-    text-decoration: underline;
-  }
-
-  .main {
-    width: 100%;
-    overflow: unset;
-  }
-
-  .icons:hover {
-    width: 100px;
-    height: 100px;
-    animation-name: rotateImage;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    position: relative;
-  }
-
-  @keyframes rotateImage {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    5% {
-      transform: rotate(18deg);
-    }
-
-    10% {
-      transform: rotate(36deg);
-    }
-
-    15% {
-      transform: rotate(54deg);
-    }
-
-    20% {
-      transform: rotate(72deg);
-    }
-
-    25% {
-      transform: rotate(90deg);
-    }
-
-    30% {
-      transform: rotate(108deg);
-    }
-
-    40% {
-      transform: rotate(126deg);
-    }
-
-    45% {
-      transform: rotate(144deg);
-    }
-
-    50% {
-      transform: rotate(162deg);
-    }
-
-    55% {
-      transform: rotate(180deg);
-    }
-
-    60% {
-      transform: rotate(198deg);
-    }
-
-    65% {
-      transform: rotate(216deg);
-    }
-
-    70% {
-      transform: rotate(234deg);
-    }
-
-    75% {
-      transform: rotate(252deg);
-    }
-
-    80% {
-      transform: rotate(288deg);
-    }
-
-    85% {
-      transform: rotate(306deg);
-    }
-
-    90% {
-      transform: rotate(324deg);
-    }
-
-    95% {
-      transform: rotate(342deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+.pst {
+  text-decoration: underline;
+  font-weight: bold;
 }
-
-/* Medium devices (landscape tablets, 765px and up) */
-
-@media only screen and (min-width:765px) {
-  
-  #header {
-    text-align: center;
-    font-size: 110%;
-    padding: 2rem;
-
-  }
-
-
-    body {
-      padding: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-  .topSection{
-    
-    border: 3px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .topHeading{
-    text-decoration:underline;
-  }
-    
-
-  ul.sidemenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    text-decoration: underline;
-    width: 16%;
-    padding-top: 0px;
-    position: fixed;
-
-
-  }
-  .main{
-    margin-left: 22%;
-    width: 75%;
-    overflow: unset;
-  }
-
-
-  .active {
-    background-color: #04AA6D;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #7b2f91;
-    color: white;}
-
-  .heading {
-    text-decoration: underline;
-  }
-
-  .pst {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-  .icons {
-    display: inline-block;
-    width: 5rem;
-    margin: 0.5rem;
-    height: 5rem;
-  }
-
-  footer {
-    text-align: center;
-    padding: 2rem;
-  }
-
-  #contact {
-    text-decoration: underline;
-  }
-
-
-
-  .icons:hover {
-    width: 100px;
-    height: 100px;
-    animation-name: rotateImage;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    position: relative;
-  }
-
-  @keyframes rotateImage {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    5% {
-      transform: rotate(18deg);
-    }
-
-    10% {
-      transform: rotate(36deg);
-    }
-
-    15% {
-      transform: rotate(54deg);
-    }
-
-    20% {
-      transform: rotate(72deg);
-    }
-
-    25% {
-      transform: rotate(90deg);
-    }
-
-    30% {
-      transform: rotate(108deg);
-    }
-
-    40% {
-      transform: rotate(126deg);
-    }
-
-    45% {
-      transform: rotate(144deg);
-    }
-
-    50% {
-      transform: rotate(162deg);
-    }
-
-    55% {
-      transform: rotate(180deg);
-    }
-
-    60% {
-      transform: rotate(198deg);
-    }
-
-    65% {
-      transform: rotate(216deg);
-    }
-
-    70% {
-      transform: rotate(234deg);
-    }
-
-    75% {
-      transform: rotate(252deg);
-    }
-
-    80% {
-      transform: rotate(288deg);
-    }
-
-    85% {
-      transform: rotate(306deg);
-    }
-
-    90% {
-      transform: rotate(324deg);
-    }
-
-    95% {
-      transform: rotate(342deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-}
-
-
-/* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width:1400px) {
-
-  #header {
-    text-align: center;
-    font-size: 110%;
-    padding: 2rem;
-
-  }
-
-
-    body {
-      padding: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-  .topSection{
-    
-    border: 3px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .topHeading{
-    text-decoration:underline;
-  }
-    
-
-  ul.sidemenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    text-decoration: underline;
-    width: 16%;
-    padding-top: 0px;
-    position: fixed;
-
-
-  }
-  .main{
-    margin-left: 22%;
-    width: 75%;
-    overflow: unset;
-  }
-
-
-  .active {
-    background-color: #04AA6D;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #7b2f91;
-    color: white;}
-
-  .heading {
-    text-decoration: underline;
-  }
-
-  .pst {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-  .icons {
-    display: inline-block;
-    width: 5rem;
-    margin: 0.5rem;
-    height: 5rem;
-  }
-
-  footer {
-    text-align: center;
-    padding: 2rem;
-  }
-
-  #contact {
-    text-decoration: underline;
-  }
-
-
-
-  .icons:hover {
-    width: 100px;
-    height: 100px;
-    animation-name: rotateImage;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    position: relative;
-    transition: 0.2s;
-
-  }
-
-  @keyframes rotateImage {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    5% {
-      transform: rotate(18deg);
-    }
-
-    10% {
-      transform: rotate(36deg);
-    }
-
-    15% {
-      transform: rotate(54deg);
-    }
-
-    20% {
-      transform: rotate(72deg);
-    }
-
-    25% {
-      transform: rotate(90deg);
-    }
-
-    30% {
-      transform: rotate(108deg);
-    }
-
-    40% {
-      transform: rotate(126deg);
-    }
-
-    45% {
-      transform: rotate(144deg);
-    }
-
-    50% {
-      transform: rotate(162deg);
-    }
-
-    55% {
-      transform: rotate(180deg);
-    }
-
-    60% {
-      transform: rotate(198deg);
-    }
-
-    65% {
-      transform: rotate(216deg);
-    }
-
-    70% {
-      transform: rotate(234deg);
-    }
-
-    75% {
-      transform: rotate(252deg);
-    }
-
-    80% {
-      transform: rotate(288deg);
-    }
-
-    85% {
-      transform: rotate(306deg);
-    }
-
-    90% {
-      transform: rotate(324deg);
-    }
-
-    95% {
-      transform: rotate(342deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
+.heading {
+  text-decoration: underline;
+  text-align: center;
 }
