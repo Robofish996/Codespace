@@ -28,7 +28,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 764px and up) */
 
 @media only screen and (max-width:764px) {
 
@@ -200,7 +200,7 @@ body {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 765px and up) */
 
 @media only screen and (min-width:765px) {
   
@@ -386,7 +386,7 @@ body {
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width:1400px) {
 
   #header {
