@@ -91,3 +91,7 @@ body {
   text-decoration: underline;
   text-align: center;
 }
+.educationCards{
+  height: 15vh !important;
+  text-align: center;
+}
