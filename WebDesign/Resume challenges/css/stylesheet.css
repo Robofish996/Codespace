@@ -38,6 +38,7 @@ picture {
 
   footer {
     text-align: center;
+
   }
 
   .icons {
@@ -116,7 +117,9 @@ picture {
 
   footer {
     text-decoration: none;
+    text-align: center;
   }
+
 
   .icons {
     width: 100px;
@@ -125,6 +128,7 @@ picture {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     position: relative;
+    
   }
 
   @keyframes rotateImage {
@@ -192,6 +196,8 @@ picture {
     text-align: center;
   }
 
+
+
   .icons {
     width: 100px;
     height: 100px;
@@ -199,6 +205,7 @@ picture {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     position: relative;
+   
   }
 
   .uhead {
