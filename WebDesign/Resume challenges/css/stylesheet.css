@@ -31,10 +31,16 @@ picture {
     text-align: center;
   }
 
-  .educationCards {
-    height: 18vh !important;
+  .card-title{
+    text-decoration: underline;
     text-align: center;
-  }
+   } 
+  
+   .card-text{
+    text-decoration: none;
+  
+   }
+
 
   footer {
     text-align: center;
