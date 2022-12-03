@@ -47,6 +47,9 @@ picture {
 
   }
 
+  .iconAchors {
+    text-decoration: none !important;
+  }
   .icons {
     width: 100px;
     height: 100px;
@@ -198,6 +201,10 @@ picture {
   text-decoration: none;
  }
 
+ .systemxp_table{
+  height: 50px;
+  width: 50px;
+ }
   footer {
     text-align: center;
   }
