@@ -30,16 +30,50 @@ picture {
   .header {
     text-align: center;
   }
-
-  .card-title{
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+  }
+  .jumbotron{
+    background-image: url("./back.webp");
+    background-size:cover;
+    color: black;
+    padding: 2rem;
+  }
+  .systemCards{
+    background-color: #F7F7F7 !important;
+  }
+  .card-title {
     text-decoration: underline;
     text-align: center;
-   } 
-  
-   .card-text{
+  }
+
+  .card-text {
     text-decoration: none;
-  
-   }
+
+  }
+  .myform{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #F7F7F7;
+  }
+  .uni {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  select{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    
+  }
 
 
   footer {
@@ -50,9 +84,10 @@ picture {
   .iconAchors {
     text-decoration: none !important;
   }
+
   .icons {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     animation-name: rotateImage;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -109,35 +144,68 @@ picture {
   .header {
     text-align: center;
   }
-  .heading{
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+  }
+  .jumbotron{
+    background-image: url("./back.webp");
+    background-size:cover;
+    color: black;
+    padding: 2rem;
+  }
+  .systemCards{
+    background-color: #F7F7F7 !important;
+  }
+  .card-title {
     text-decoration: underline;
     text-align: center;
   }
-  .card-title{
-    text-decoration: underline;
-    text-align: center;
-   } 
-  
-   .card-text{
+
+  .card-text {
     text-decoration: none;
-  
-   }
+
+  }
+  .myform{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #F7F7F7;
+  }
+  .uni {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  select{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    
+  }
 
 
   footer {
-    text-decoration: none;
     text-align: center;
+
   }
 
+  .iconAchors {
+    text-decoration: none !important;
+  }
 
   .icons {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     animation-name: rotateImage;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     position: relative;
-    
   }
 
   @keyframes rotateImage {
@@ -180,54 +248,104 @@ picture {
     100% {
       transform: rotate(18deg);
     }
-
   }
 }
+
 
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width:1400px) {
 
+
   .header {
     text-align: center;
   }
-
- .card-title{
-  text-decoration: underline;
-  padding: 2rem;
- } 
-
- .card-text{
-  text-decoration: none;
- }
-
- .systemxp_table{
-  height: 50px;
-  width: 50px;
- }
-  footer {
+  .heading{
+    text-decoration: underline;
     text-align: center;
   }
 
+  .jumbotron{
+    background-image: url("./back.webp");
+    background-size:contain;
+    color: black;
+    padding: 2rem;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+  }
 
+  .systemCards{
+    background-color: #F7F7F7 !important;
+  }
+  .inner{
+    overflow: hidden;
+  }
+  .inner img{
+    transition: all 1.5s ease;
+  }
+  .inner:hover img{
+    transform: scale(1.5);
+  }
+  .card-title {
+    text-decoration: underline;
+    padding: 2rem;
+  }
 
-  .icons {
-    width: 100px;
-    height: 100px;
-    animation-name: rotateImage;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    position: relative;
-   
+  .card-text {
+    text-decoration: none;
   }
 
   .uhead {
     text-decoration: underline;
   }
+  .pst{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .myform{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #F7F7F7;
+  }
+  .uni {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  select{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    
+  }
 
-  body {
+  footer {
+    text-align: center;
+   
+  }
+
+
+  .icons {
+    width: 50px !important;
+    height: 50px !important;
+    animation-name: rotateImage;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
 
   }
+  .iconAchors {
+    text-decoration: none !important;
+  }
+
 
   @keyframes rotateImage {
     0% {
@@ -270,6 +388,6 @@ picture {
       transform: rotate(18deg);
     }
   }
-  
+
 
 }
